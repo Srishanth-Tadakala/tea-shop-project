@@ -1,0 +1,19 @@
+{
+  "name": "tea-shop-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tea Shop - Full-stack split-architecture application with client-web and admin-web",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client-web && npm install --prefix admin-web && npm install --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client-web",
+    "dev:admin": "npm run dev --prefix admin-web",
+    "build:client": "npm run build --prefix client-web",
+    "build:admin": "npm run build --prefix admin-web",
+    "build:server": "npm run build --prefix server",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
