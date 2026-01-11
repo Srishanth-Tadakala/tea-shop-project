@@ -6,7 +6,7 @@ const getRequiredEnv = (key) => {
   return String(value).trim().replace(/\/$/, '');
 };
 
-export const API_BASE_URL = getRequiredEnv('VITE_API_URL');
+export const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
 export const WS_URL = getRequiredEnv('VITE_WS_URL');
 
 export const buildApiUrl = (path = '') => {
