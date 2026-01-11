@@ -1,6 +1,7 @@
-import { API_BASE_URL } from '../config/env';
+import axios from "axios";
 
-// API service configuration
-export const api = {
-  baseURL: API_BASE_URL
-};
+const api = axios.create({
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
+});
+
+export default api;
