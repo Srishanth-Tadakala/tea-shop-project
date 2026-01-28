@@ -235,7 +235,7 @@ const Menu = () => {
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-2xl font-bold text-wood-900">{item.name}</h3>
-                    <span className="text-xl font-bold text-primary-600">${item.price.toFixed(2)}</span>
+                    <span className="text-xl font-bold text-primary-600">₹{item.price.toFixed(2)}</span>
                   </div>
                   {item.description && (
                     <p className="text-wood-600 mb-4">{item.description}</p>

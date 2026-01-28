@@ -37,7 +37,7 @@ const Navbar = () => {
               className="text-2xl font-bold text-amber-100 flex items-center gap-2"
             >
               <span className="text-3xl drop-shadow-lg">🍵</span>
-              <span className="drop-shadow-md">Tea Shop</span>
+              <span className="drop-shadow-md">HemaSri Amruthulya</span>
             </motion.div>
           </Link>
 

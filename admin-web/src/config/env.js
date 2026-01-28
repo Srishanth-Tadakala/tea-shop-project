@@ -10,6 +10,10 @@ export const API_BASE_URL = getRequiredEnv('VITE_API_URL');
 export const WS_URL = getRequiredEnv('VITE_WS_URL');
 
 export const buildApiUrl = (path = '') => {
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  let normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  // Ensure path starts with /api
+  if (!normalizedPath.startsWith('/api')) {
+    normalizedPath = '/api' + (normalizedPath.startsWith('/') ? '' : '/') + normalizedPath;
+  }
   return `${API_BASE_URL}${normalizedPath}`;
 };

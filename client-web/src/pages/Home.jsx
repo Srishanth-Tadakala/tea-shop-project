@@ -91,7 +91,7 @@ const Home = () => {
             transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-bold text-wood-900 mb-6 drop-shadow-sm"
           >
-            Welcome to Tea Shop
+            Welcome to HemaSri Amruthulya
           </motion.h1>
           <motion.p
             initial={{ y: 50, opacity: 0 }}

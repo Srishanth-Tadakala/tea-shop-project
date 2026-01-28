@@ -5,7 +5,7 @@ import { useToastStore } from '../context/useToastStore';
 import { buildApiUrl, WS_URL } from '../config/env';
 
 const defaultShopInfo = {
-  name: 'Tea Shop',
+  name: 'HemaSri Amruthulya Tea',
   address: '123 Tea Street, Beverly Hills, CA 90210',
   phone: '+1 (234) 567-890',
   email: 'info@teashop.com',

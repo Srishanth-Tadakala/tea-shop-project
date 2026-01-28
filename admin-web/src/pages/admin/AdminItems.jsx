@@ -428,7 +428,7 @@ const AdminItems = () => {
               <div className="p-4">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold">{item.name}</h3>
-                  <span className="text-lg font-bold text-primary-600">${item.price.toFixed(2)}</span>
+                  <span className="text-lg font-bold text-primary-600">₹{item.price.toFixed(2)}</span>
                 </div>
                 {item.description && (
                   <p className="text-gray-600 text-sm mb-3">{item.description}</p>

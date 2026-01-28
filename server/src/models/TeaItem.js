@@ -66,7 +66,7 @@ teaItemSchema.index({ category: 1, isAvailable: 1 });
 
 // Virtual for formatted price
 teaItemSchema.virtual('formattedPrice').get(function () {
-  return `$${this.price.toFixed(2)}`;
+  return `₹${this.price.toFixed(2)}`;
 });
 
 // Method to toggle availability
